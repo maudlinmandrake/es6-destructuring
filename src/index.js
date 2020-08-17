@@ -8,9 +8,14 @@ const [cat, dog] = animals;
 console.log(cat);
 
 // keywords must match the name of properties inside object
-const { name, sound } = cat;
+// Nested objects
+const {
+  name,
+  sound,
+  feedingRequirements: { food, water }
+} = cat;
 
-console.log(sound);
+console.log(feedingRequirements);
 
 // // CHALLENGE: uncomment the code below and see the car stats rendered
 // import React from "react";
